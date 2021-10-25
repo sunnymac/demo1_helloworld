@@ -9,11 +9,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Center(
-        child: Scaffold(
-          body: Text(
-            "Hello World",
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            "Demo 1 Hello World",
+          ),
+          centerTitle: true,
+        ),
+        body: Center(
+          child: Container(
+            width: 350,
+            color: Colors.red,
+            child: const Text(
+              "Hello World",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 60.0,
+              ),
+            ),
           ),
         ),
       ),
